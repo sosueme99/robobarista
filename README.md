@@ -5,6 +5,12 @@
 This SAM application show a simple serverless coffee ordering app.
 It should NOT be used in a production environment as it exposes an HTTP API endpoint from AWS API Gateway
 
+```mermaid
+graph TD;
+    API-Gateway-->Lambda;
+    Lambda-->DynamoDb;
+```
+
 Pre-requisites:
 - Git client (https://github.com/git-guides/install-git)
 - AWS CLI (https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
