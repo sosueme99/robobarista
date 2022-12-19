@@ -29,15 +29,15 @@ This will create a new folder call robobarista.
 
     cd robobarista
 
-    aws deploy --guide
+    aws deploy --guided
 
-The first time you run sam deploy --guide it will prompt for a few requirements.
+The first time you run **sam deploy --guided** it will prompt for a few requirements.
 
-You can save your choices in samconfig.toml file. 
+You can save your choices in **samconfig.toml** file. 
 
-You must specify Stack Name: The API Gateway, Lambda function and DynamoDb table will have this name.
+You must specify Stack Name: The API Gateway, Lambda function and DynamoDb table will use this name.
 
-Choose your region. Currently defaults to London.
+Choose your region. Currently defaults to eu-west-2 London.
 
 Allow the SAM CLI creation.
 
@@ -45,7 +45,7 @@ As this is just for short term demo will will not use an authoriser. Read more h
 
 Example output:
 
-    Stack Name [sam-app]: XXX-YourAppName-XXX
+    Stack Name [sam-app]: your_app_name 
     AWS Region [eu-west-2]: 
     Confirm changes before deploy [y/N]: y
     Allow SAM CLI IAM role creation [Y/n]: y
