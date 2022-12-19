@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: This template creates a simple coffee ordering app
+Resources:
+  LambdaFunction:
+    Type: AWS::Serverless::Function
+    Description: 'Coffee order processor'
+    Properties:
+      FunctionName: robobarista
+      Handler: index.lambda_handler
+      Runtime: python3.9
+      CodeUri: src/
+      Policies:
+        DynamoDBCrudPolicy:
+          TableName: !Ref DynamoDBTable
+      Events:
+        ApiEvent:
+          Type: HttpApi
+          Properties:
+            Path: /
+            Method: GET
+  DynamoDBTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey:
+        Name: orderID
+        Type: String
+      TableName: robobarista
+Outputs:
+  EndpointUrl:
+    Description: 'HTTP API endpoint URL'
+    Value: !Sub 'https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/Prod'
