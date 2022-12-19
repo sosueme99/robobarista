@@ -34,7 +34,7 @@ This will create a new folder call robobarista.
 
     cd robobarista
 
-    aws deploy --guided
+    sam deploy --guided
 
 The first time you run **sam deploy --guided** it will prompt for a few requirements.
 
