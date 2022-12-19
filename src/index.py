@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     now = datetime.now()
     date_time_str = now.strftime("%Y-%m-%d %H:%M:%S")
     
-    available_coffees = ['americano','latte','cappuccino','espresso','machiato','caramel-latte','cortado']
+    available_coffees = ['americano','latte','cappuccino','espresso','macchiato','caramel-latte','cortado']
     available_sizes = ['small','medium','regular','large','extra-large']
     available_milks = ['soya','semi','full','almond']
     
