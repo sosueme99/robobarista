@@ -39,7 +39,7 @@ You must specify Stack Name: The API Gateway, Lambda function and DynamoDb table
 
 Choose your region. Currently defaults to eu-west-2 London.
 
-Allow the SAM CLI creation.
+You will need to allow the SAM CLI IAM Role creation.
 
 As this is just for short term demo we will not use an authoriser. Read more here about authorisers and access control. https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html 
 
@@ -55,6 +55,7 @@ Example output:
 
 ## Updating the existing deployment
 If you update the lambda or the SAM templates you can update the running application.
+
 Run the following commands from the application folder
 
     sam build
@@ -62,6 +63,7 @@ Run the following commands from the application folder
 
 ## Deleting the application
 If you want to delete the application from your AWS account.
+
 Run the following commands from the application folder
 
     sam delete
