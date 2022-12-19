@@ -41,7 +41,7 @@ Choose your region. Currently defaults to eu-west-2 London.
 
 Allow the SAM CLI creation.
 
-As this is just for short term demo will will not use an authoriser. Read more here about authorisers and access control. https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html 
+As this is just for short term demo we will not use an authoriser. Read more here about authorisers and access control. https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html 
 
 Example output:
 
