@@ -33,18 +33,18 @@ This will create a new folder call robobarista.
 
 The first time you run sam deploy --guide it will prompt for a few requirements.
 You can save your choices in samconfig.toml file. 
+You must specify Stack Name: The API Gateway, Lambda function and DynamoDb table will have this name.
+Choose your region. Currently defaults to London.
+Allow the SAM CLI creation.
+As this is just for short term demo will will not use an authoriser. Read more here about authorisers and access control. https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html 
 
-'''
-Stack Name [sam-app]: toms-demo-app
-AWS Region [eu-west-2]: 
-#Shows you resources changes to be deployed and require a 'Y' to initiate deploy
-Confirm changes before deploy [y/N]: y
-#SAM needs permission to be able to create roles to connect to the resources in your template
-Allow SAM CLI IAM role creation [Y/n]: y
-#Preserves the state of previously provisioned resources when an operation fails
-Disable rollback [y/N]: n
-LambdaFunction may not have authorization defined, Is this okay? [y/N]: y
-Save arguments to configuration file [Y/n]: y
-SAM configuration file [samconfig.toml]: 
-SAM configuration environment [default]:
-'''
+Example output:
+
+    Stack Name [sam-app]: XXX-YourAppName-XXX
+    AWS Region [eu-west-2]: 
+    Confirm changes before deploy [y/N]: y
+    Allow SAM CLI IAM role creation [Y/n]: y
+    Disable rollback [y/N]: n
+    LambdaFunction may not have authorization defined, Is this okay? [y/N]: y
+    Save arguments to configuration file [Y/n]: y
+
