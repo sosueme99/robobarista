@@ -22,7 +22,28 @@ Recommendation:
 
 ## Installing the coffee app
 
-    mkdir robobarista
-    cd robobarista
+In your local dev folder clone the repository.
+This will create a new folder call robobarista.
+
     git clone https://github.com/sosueme99/robobarista.git
+
+    cd robobarista
+
+    aws deploy --guide
+
+The first time you run sam deploy --guide it will prompt for a few requirements.
+Looking for config file [samconfig.toml] :  Not found
+
+        Stack Name [sam-app]: toms-demo-app
+        AWS Region [eu-west-2]: 
+        #Shows you resources changes to be deployed and require a 'Y' to initiate deploy
+        Confirm changes before deploy [y/N]: y
+        #SAM needs permission to be able to create roles to connect to the resources in your template
+        Allow SAM CLI IAM role creation [Y/n]: y
+        #Preserves the state of previously provisioned resources when an operation fails
+        Disable rollback [y/N]: n
+        LambdaFunction may not have authorization defined, Is this okay? [y/N]: y
+        Save arguments to configuration file [Y/n]: y
+        SAM configuration file [samconfig.toml]: 
+        SAM configuration environment [default]:
 
