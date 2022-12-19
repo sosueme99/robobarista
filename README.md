@@ -53,3 +53,19 @@ Example output:
     LambdaFunction may not have authorization defined, Is this okay? [y/N]: y
     Save arguments to configuration file [Y/n]: y
 
+## Updating the existing deployment
+If you update the lambda or the SAM templates you can update the running application.
+Run the following commands from the application folder
+
+    sam build
+    sam deploy
+
+## Deleting the application
+If you want to delete the application from your AWS account.
+Run the following commands from the application folder
+
+    sam delete
+
+
+
+
