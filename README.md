@@ -34,7 +34,8 @@ This will create a new folder call robobarista.
 The first time you run sam deploy --guide it will prompt for a few requirements.
 You can save your choices in samconfig.toml file. 
 
-Stack Name [sam-app]: ==toms-demo-app==
+'''
+Stack Name [sam-app]: toms-demo-app
 AWS Region [eu-west-2]: 
 #Shows you resources changes to be deployed and require a 'Y' to initiate deploy
 Confirm changes before deploy [y/N]: y
@@ -46,4 +47,4 @@ LambdaFunction may not have authorization defined, Is this okay? [y/N]: y
 Save arguments to configuration file [Y/n]: y
 SAM configuration file [samconfig.toml]: 
 SAM configuration environment [default]:
-
+'''
