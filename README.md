@@ -16,6 +16,7 @@ Recommendation:
 
 ## Installing the coffee app
 
-Clone the coffee app repo
-git clone https://github.com/sosueme99/robobarista.git
+    mkdir robobarista
+    cd robobarista
+    git clone https://github.com/sosueme99/robobarista.git
 
