@@ -32,10 +32,15 @@ This will create a new folder call robobarista.
     aws deploy --guide
 
 The first time you run sam deploy --guide it will prompt for a few requirements.
+
 You can save your choices in samconfig.toml file. 
+
 You must specify Stack Name: The API Gateway, Lambda function and DynamoDb table will have this name.
+
 Choose your region. Currently defaults to London.
+
 Allow the SAM CLI creation.
+
 As this is just for short term demo will will not use an authoriser. Read more here about authorisers and access control. https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html 
 
 Example output:
