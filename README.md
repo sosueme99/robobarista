@@ -1,6 +1,6 @@
 # Robobarista
 
-## Simple serverless app deployed with AWS SAM
+## Simple serverless coffee app deployed with AWS SAM
 
 This SAM application show a simple serverless coffee ordering app.
 It should NOT be used in a production environment as it exposes an HTTP API endpoint from AWS API Gateway
@@ -22,6 +22,12 @@ Recommendation:
 
 ## Installing the coffee app
 
+This will launch an AWS CloudFormation stackset.
+
+The stackset will create an API Gateway HTTP Api endpoint with the same name as the stack you create.
+
+It will also create a Lambda function and a DynamoDb table both called **robobarista**
+
 In your local dev folder clone the repository.
 This will create a new folder call robobarista.
 
@@ -35,7 +41,7 @@ The first time you run **sam deploy --guided** it will prompt for a few requirem
 
 You can save your choices in **samconfig.toml** file. 
 
-You must specify Stack Name: The API Gateway, Lambda function and DynamoDb table will use this name.
+You must specify Stack Name: **The API Gateway inherits this name.**
 
 Choose your region. Currently defaults to eu-west-2 London.
 
