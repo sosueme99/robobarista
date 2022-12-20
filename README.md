@@ -21,14 +21,23 @@ Pre-requisites:
 
 ## Installing the coffee app
 
-This will launch an AWS CloudFormation stackset.
-
 The stackset will create an API Gateway HTTP Api endpoint with the same name as the stack you create.
 
 It will also create a Lambda function and a DynamoDb table both called **robobarista**
 
+The final output from the stack is the API URL that you can then demo.
+
+
+-------------------------------------------------------------------------------------------------
+Key             EndpointUrl
+Description     HTTP API endpoint URL
+Value           **https://xxxxxxxxxxxx.execute-api.eu-west-2.amazonaws.com/**
+-------------------------------------------------------------------------------------------------
+
+
+
 In your local dev folder clone the repository.
-This will create a new folder call robobarista.
+This will create a new folder called robobarista.
 
     git clone https://github.com/sosueme99/robobarista.git
 
