@@ -27,12 +27,10 @@ It will also create a Lambda function and a DynamoDb table both called **robobar
 
 The final output from the stack is the API URL that you can then demo.
 
-
--------------------------------------------------------------------------------------------------
 Key             EndpointUrl
 Description     HTTP API endpoint URL
 Value           **https://xxxxxxxxxxxx.execute-api.eu-west-2.amazonaws.com/**
--------------------------------------------------------------------------------------------------
+
 
 
 
